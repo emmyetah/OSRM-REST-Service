@@ -13,11 +13,11 @@ The service connects to Azure Cosmos DB, which stores multiple JSON datasets use
 The service communicates with the Open Source Routing Machine (OSRM) to perform route calculations. Requests received by the API are processed and forwarded to the OSRM engine, with routing results returned to clients in structured JSON responses.
 
 - RESTful API Design
-All service functions are implemented using appropriate HTTP methods and follow RESTful conventions, including:
-- Correct endpoint routing
-- Structured request and response headers
-- Proper use of HTTP status codes
-- JSON-based request and response bodies
+All service functions are implemented using appropriate HTTP methods and follow RESTful -conventions, including:
+-Correct endpoint routing
+-Structured request and response headers
+-Proper use of HTTP status codes
+-JSON-based request and response bodies
 
 - JSON-Based Service Communication
 The orchestration layer communicates strictly using JSON, ensuring consistent and platform-independent data exchange between the API, database, and routing engine.
@@ -33,3 +33,4 @@ Test results were analysed to identify performance bottlenecks and justify impro
 
 - Pagination for Efficient Data Handling
 Following QoS analysis, pagination was implemented within the API endpoints to improve performance when handling larger datasets and to reduce response payload size.
+
