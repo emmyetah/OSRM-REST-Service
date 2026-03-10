@@ -14,10 +14,10 @@ The service communicates with the Open Source Routing Machine (OSRM) to perform 
 
 - RESTful API Design
 All service functions are implemented using appropriate HTTP methods and follow RESTful -conventions, including:
--Correct endpoint routing
--Structured request and response headers
--Proper use of HTTP status codes
--JSON-based request and response bodies
+Correct endpoint routing,
+Structured request and response headers,
+Proper use of HTTP status codes,
+JSON-based request and response bodies,
 
 - JSON-Based Service Communication
 The orchestration layer communicates strictly using JSON, ensuring consistent and platform-independent data exchange between the API, database, and routing engine.
@@ -33,4 +33,5 @@ Test results were analysed to identify performance bottlenecks and justify impro
 
 - Pagination for Efficient Data Handling
 Following QoS analysis, pagination was implemented within the API endpoints to improve performance when handling larger datasets and to reduce response payload size.
+
 
